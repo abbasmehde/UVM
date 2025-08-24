@@ -1,0 +1,382 @@
+# vsim -c tb_design_t -sv_lib /home/ubuntu/ICS/uvm_1.2/uvm-1.2/lib/uvm_dpi -work /home/ubuntu/my_uvm/verif/script//work "+UVM_TESTNAME=short_test" "+UVM_CONFIG_DB_TRACE" -classdebug -l short_test.log -do "run -a; q" "+UVM_VERBOSITY=UVM_MEDIUM" "+num_packets=100" "+min_a=20" "+max_a=50" "+min_b=10" "+max_b=40" "+min_c=5" "+max_c=10" "+watchdog_timer=2000" 
+# Start time: 16:43:53 on Aug 24,2025
+# Loading /tmp/root@ubuntu-2204_dpi_9192/linuxaloem_gcc-7.4.0/export_tramp.so
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading /home/ubuntu/my_uvm/verif/script//work.uvm_pkg
+# Loading /home/ubuntu/my_uvm/verif/script//work.design_package
+# Loading /home/ubuntu/my_uvm/verif/script//work.tb_design_t
+# Loading /home/ubuntu/my_uvm/verif/script//work.design_in_intf
+# Loading /home/ubuntu/my_uvm/verif/script//work.design_out_intf
+# Loading /home/ubuntu/my_uvm/verif/script//work.design_t
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 fs  Iteration: 0  Region: /design_package File: /home/ubuntu/my_uvm//verif/uvm_tb/scoreboard/scoreboard.sv Line: 41
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 fs  Iteration: 0  Region: /design_package File: /home/ubuntu/my_uvm//verif/uvm_tb/env/design_env.sv Line: 29
+# Compiling /tmp/root@ubuntu-2204_dpi_9192/linuxaloem_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/root@ubuntu-2204_dpi_9192/linuxaloem_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/ubuntu/ICS/uvm_1.2/uvm-1.2/lib/uvm_dpi.so
+# ** Warning: Design size of 55127 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# run -a
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/SET] Configuration 'uvm_test_top.env.inp_agnt.inp_drvr.design_in_intf' (type virtual design_in_intf) set by  = (virtual design_in_intf) /tb_design_t/inp_intf
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/SET] Configuration 'uvm_test_top.env.inp_agnt.inp_mntr.design_in_intf' (type virtual design_in_intf) set by  = (virtual design_in_intf) /tb_design_t/inp_intf
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/SET] Configuration 'uvm_test_top.env.out_agnt.out_mntr.design_out_intf' (type virtual design_out_intf) set by  = (virtual design_out_intf) /tb_design_t/out_intf
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/SET] Configuration 'uvm_test_top.design_in_intf' (type virtual design_in_intf) set by  = (virtual design_in_intf) /tb_design_t/inp_intf
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.recording_detail' (type reg signed[4095:0]) read by uvm_test_top = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.recording_detail' (type int) read by uvm_test_top = null (failed lookup)
+# UVM_INFO @ 0: reporter [RNTST] Running test short_test...
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.com_cnfg.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.com_cnfg = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.com_cnfg.recording_detail' (type int) read by uvm_test_top.com_cnfg = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.des_cnfg.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.des_cnfg = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.des_cnfg.recording_detail' (type int) read by uvm_test_top.des_cnfg = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/SET] Configuration '*.com_cnfg' (type class design_package::common_config) set by  = (class design_package::common_config) {com_cnfg} 373 1 403 @uvm_status_container@1 { } @uvm_report_handler@37 0 1 null @uvm_domain@2 { } null null 0 0 @short_test@1 { } { } null { } { } {uvm_test_top.com_cnfg} @uvm_object_string_pool__2@2 0 {} 0 1 0 {uvm_component} {} {} {} @uvm_cmdline_processor@1 0 x {common_config}
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/SET] Configuration '*.des_cnfg' (type class design_package::design_config) set by  = (class design_package::design_config) {des_cnfg} 386 1 409 @uvm_status_container@1 { } @uvm_report_handler@38 0 1 null @uvm_domain@2 { } null null 0 0 @short_test@1 { } { } null { } { } {uvm_test_top.des_cnfg} @uvm_object_string_pool__2@3 0 {} 0 1 0 {uvm_component} {} {} {} @uvm_cmdline_processor@1 0 0 0 0 0 0 0 0 {design_config}
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.recording_detail' (type int) read by uvm_test_top.env = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.design_in_intf' (type virtual design_in_intf) read by uvm_test_top = (virtual design_in_intf) /tb_design_t/inp_intf
+# UVM_INFO ../short_test/test.sv(18) @ 0: uvm_test_top [short_test] starting of short test..
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.recording_detail' (type int) read by uvm_test_top.env.inp_agnt = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.out_agnt.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.out_agnt = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.out_agnt.recording_detail' (type int) read by uvm_test_top.env.out_agnt = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.scrbd.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.scrbd = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.scrbd.recording_detail' (type int) read by uvm_test_top.env.scrbd = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.*.com_cnfg' (type class design_package::common_config) read by uvm_test_top.env = (class design_package::common_config) {com_cnfg} 373 1 471 @uvm_status_container@1 { } @uvm_report_handler@37 0 1 null @uvm_domain@2 { } @uvm_phase@2 null 0 0 @short_test@1 { } { } null { } { } {uvm_test_top.com_cnfg} @uvm_object_string_pool__2@2 0 {} 0 1 0 {uvm_component} {} {} {} @uvm_cmdline_processor@1 100 200000000 {common_config}
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/SET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.main_phase.default_sequence' (type class uvm_pkg::uvm_object_wrapper) set by uvm_test_top.env = (class uvm_pkg::uvm_object_wrapper) {inp_sequence} @uvm_object_registry__52@1
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_mntr.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.inp_mntr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_mntr.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.inp_mntr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_drvr.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.inp_drvr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_drvr.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.inp_drvr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_drvr.seq_item_port.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.inp_drvr.seq_item_port = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_drvr.seq_item_port.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.inp_drvr.seq_item_port = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_drvr.seq_item_port.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.inp_drvr.seq_item_port = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_drvr.rsp_port.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.inp_drvr.rsp_port = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_drvr.rsp_port.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.inp_drvr.rsp_port = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_drvr.rsp_port.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.inp_drvr.rsp_port = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.rsp_export.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.rsp_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.rsp_export.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.rsp_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.rsp_export.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.rsp_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.put_export.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.put_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.put_export.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.put_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.put_export.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.put_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.get_peek_export.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.get_peek_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.get_peek_export.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.get_peek_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.get_peek_export.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.get_peek_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.put_ap.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.put_ap = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.put_ap.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.put_ap = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.put_ap.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.put_ap = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.get_ap.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.get_ap = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.get_ap.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.get_ap = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.get_ap.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.get_ap = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.analysis_export.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.analysis_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.analysis_export.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.analysis_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.analysis_export.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.sqr_rsp_analysis_fifo.analysis_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.put_export.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo.put_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.put_export.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo.put_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.put_export.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo.put_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.get_peek_export.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo.get_peek_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.get_peek_export.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo.get_peek_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.get_peek_export.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo.get_peek_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.put_ap.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo.put_ap = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.put_ap.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo.put_ap = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.put_ap.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo.put_ap = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.get_ap.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo.get_ap = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.get_ap.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo.get_ap = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.req_fifo.get_ap.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.req_fifo.get_ap = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.seq_item_export.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.seq_item_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.seq_item_export.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.sqncr.seq_item_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.seq_item_export.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr.seq_item_export = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_drvr.design_in_intf' (type virtual design_in_intf) read by uvm_test_top.env.inp_agnt.inp_drvr = (virtual design_in_intf) /tb_design_t/inp_intf
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_mntr.design_in_intf' (type virtual design_in_intf) read by uvm_test_top.env.inp_agnt.inp_mntr = (virtual design_in_intf) /tb_design_t/inp_intf
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_mntr.mon_analysis_port.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.inp_mntr.mon_analysis_port = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_mntr.mon_analysis_port.recording_detail' (type int) read by uvm_test_top.env.inp_agnt.inp_mntr.mon_analysis_port = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.inp_mntr.mon_analysis_port.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.inp_mntr.mon_analysis_port = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.default_sequence' (type string) read by uvm_test_top.env.inp_agnt.sqncr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.count' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.max_random_count' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.max_random_depth' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.pound_zero_count' (type reg signed[4095:0]) read by uvm_test_top.env.inp_agnt.sqncr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.out_agnt.out_mntr.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.out_agnt.out_mntr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.out_agnt.out_mntr.recording_detail' (type int) read by uvm_test_top.env.out_agnt.out_mntr = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.out_agnt.out_mntr.design_out_intf' (type virtual design_out_intf) read by uvm_test_top.env.out_agnt.out_mntr = (virtual design_out_intf) /tb_design_t/out_intf
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.out_agnt.out_mntr.mon_analysis_port.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.out_agnt.out_mntr.mon_analysis_port = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.out_agnt.out_mntr.mon_analysis_port.recording_detail' (type int) read by uvm_test_top.env.out_agnt.out_mntr.mon_analysis_port = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.out_agnt.out_mntr.mon_analysis_port.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.out_agnt.out_mntr.mon_analysis_port = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.scrbd.driver_imp_monitor.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.scrbd.driver_imp_monitor = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.scrbd.driver_imp_monitor.recording_detail' (type int) read by uvm_test_top.env.scrbd.driver_imp_monitor = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.scrbd.driver_imp_monitor.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.scrbd.driver_imp_monitor = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.scrbd.dut_imp_monitor.recording_detail' (type reg signed[4095:0]) read by uvm_test_top.env.scrbd.dut_imp_monitor = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.scrbd.dut_imp_monitor.recording_detail' (type int) read by uvm_test_top.env.scrbd.dut_imp_monitor = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.scrbd.dut_imp_monitor.check_connection_relationships' (type reg signed[4095:0]) read by uvm_test_top.env.scrbd.dut_imp_monitor = null (failed lookup)
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.scrbd.*.com_cnfg' (type class design_package::common_config) read by uvm_test_top.env.scrbd = (class design_package::common_config) {com_cnfg} 373 1 860 @uvm_status_container@1 { } @uvm_report_handler@37 0 1 null @uvm_domain@2 { } @uvm_phase@2 null 0 0 @short_test@1 { } { } null { } { } {uvm_test_top.com_cnfg} @uvm_object_string_pool__2@2 0 {} 0 1 0 {uvm_component} {} {} {} @uvm_cmdline_processor@1 100 200000000 {common_config}
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/design_base_test.sv(38) @ 0: uvm_test_top [design_base_test] Started reset phase...
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/env/design_env.sv(51) @ 9950000: uvm_test_top.env [design_env] Start main phase.....
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/env/design_env.sv(54) @ 9950000: uvm_test_top.env [CHECK] Final watchdog_timer = 200000000
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 9950000: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.com_cnfg' (type class design_package::common_config) read by uvm_test_top.env.inp_agnt.sqncr = (class design_package::common_config) {com_cnfg} 373 1 907 @uvm_status_container@1 { } @uvm_report_handler@37 0 1 null @uvm_domain@2 { } @uvm_phase@21 null 0 0 @short_test@1 { } { } null { } { } {uvm_test_top.com_cnfg} @uvm_object_string_pool__2@2 0 {} 0 1 0 {uvm_component} {} {} {} @uvm_cmdline_processor@1 100 200000000 {common_config}
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/sequence/inp_sequence.sv(24) @ 9950000: uvm_test_top.env.inp_agnt.sqncr@@uvm_sequence [inp_sequence] Starting design_seq for 100 packets..
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_resource_db.svh(121) @ 9950000: reporter [CFGDB/GET] Configuration 'uvm_test_top.env.inp_agnt.sqncr.des_cnfg' (type class design_package::design_config) read by uvm_test_top.env.inp_agnt.sqncr = (class design_package::design_config) {des_cnfg} 386 1 920 @uvm_status_container@1 { } @uvm_report_handler@38 0 1 null @uvm_domain@2 { } @uvm_phase@21 null 0 0 @short_test@1 { } { } null { } { } {uvm_test_top.des_cnfg} @uvm_object_string_pool__2@3 0 {} 0 1 0 {uvm_component} {} {} {} @uvm_cmdline_processor@1 0 0 20 50 10 40 5 10 {design_config}
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/sequence/design_sequence.sv(29) @ 9950000: uvm_test_top.env.inp_agnt.sqncr@@des_sequence [Design Sequence] Generating packets = 100
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 10150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=19 b=24 c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 10250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3d y=46
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 10350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2b b=20 c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 10450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=4b y=51
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 10550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2c b=27 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 10650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=53 y=5a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 10750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2c b=10 c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 10850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3c y=45
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 10950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2c b=16 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 11050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=42 y=49
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 11150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=19 b=14 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 11250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2d y=34
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 11350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1c b=16 c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 11450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=32 y=38
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 11550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=21 b=e c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 11650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2f y=35
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 11750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=17 b=24 c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 11850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3b y=44
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 11950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=27 b=22 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 12050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=49 y=50
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 12150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=19 b=c c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 12250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=25 y=2d
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 12350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2f b=17 c=5
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 12450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=46 y=4b
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 12550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1e b=a c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 12650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=28 y=30
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 12750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2d b=18 c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 12850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=45 y=4e
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 12950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=17 b=24 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 13050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3b y=42
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 13150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=27 b=b c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 13250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=32 y=3b
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 13350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=24 b=f c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 13450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=33 y=3b
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 13550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1f b=23 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 13650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=42 y=4a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 13750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2d b=27 c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 13850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=54 y=5e
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 13950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=14 b=26 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 14050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3a y=42
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 14150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=25 b=18 c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 14250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3d y=47
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 14350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=17 b=21 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 14450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=38 y=3f
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 14550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1f b=11 c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 14650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=30 y=3a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 14750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=21 b=25 c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 14850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=46 y=50
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 14950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1c b=15 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 15050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=31 y=39
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 15150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=29 b=16 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 15250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3f y=46
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 15350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=15 b=b c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 15450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=20 y=2a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 15550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=22 b=1c c=5
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 15650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3e y=43
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 15750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1e b=23 c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 15850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=41 y=4a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 15950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2e b=b c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 16050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=39 y=42
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 16150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1e b=f c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 16250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2d y=33
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 16350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=18 b=b c=5
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 16450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=23 y=28
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 16550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1a b=12 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 16650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2c y=34
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 16750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=29 b=13 c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 16850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3c y=42
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 16950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=20 b=24 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 17050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=44 y=4b
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 17150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2e b=f c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 17250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3d y=47
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 17350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=16 b=1c c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 17450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=32 y=38
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 17550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2d b=13 c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 17650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=40 y=49
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 17750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=32 b=15 c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 17850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=47 y=50
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 17950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=22 b=1e c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 18050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=40 y=46
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 18150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1d b=28 c=5
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 18250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=45 y=4a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 18350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=17 b=19 c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 18450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=30 y=3a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 18550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=22 b=18 c=5
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 18650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3a y=3f
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 18750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1d b=c c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 18850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=29 y=32
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 18950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=30 b=13 c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 19050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=43 y=49
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 19150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2e b=1e c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 19250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=4c y=54
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 19350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1b b=17 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 19450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=32 y=3a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 19550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1f b=18 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 19650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=37 y=3f
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 19750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=25 b=19 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 19850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3e y=46
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 19950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2f b=a c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 20050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=39 y=3f
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 20150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1a b=12 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 20250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2c y=34
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 20350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=30 b=21 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 20450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=51 y=58
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 20550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2a b=14 c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 20650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3e y=47
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 20750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=25 b=26 c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 20850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=4b y=55
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 20950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1d b=20 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 21050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3d y=45
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 21150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=31 b=21 c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 21250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=52 y=5c
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 21350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=19 b=15 c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 21450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2e y=38
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 21550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=15 b=24 c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 21650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=39 y=42
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 21750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=23 b=15 c=5
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 21850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=38 y=3d
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 21950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=28 b=23 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 22050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=4b y=52
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 22150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1a b=18 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 22250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=32 y=39
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 22350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2b b=26 c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 22450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=51 y=5b
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 22550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1a b=20 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 22650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3a y=42
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 22750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2c b=d c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 22850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=39 y=42
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 22950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=27 b=27 c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 23050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=4e y=58
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 23150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2a b=a c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 23250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=34 y=3c
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 23350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=21 b=28 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 23450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=49 y=51
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 23550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1d b=22 c=5
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 23650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3f y=44
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 23750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1f b=a c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 23850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=29 y=33
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 23950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2a b=1b c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 24050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=45 y=4c
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 24150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=22 b=a c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 24250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2c y=35
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 24350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1b b=1a c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 24450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=35 y=3e
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 24550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=24 b=25 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 24650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=49 y=51
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 24750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=23 b=13 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 24850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=36 y=3d
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 24950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2a b=e c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 25050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=38 y=41
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 25150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=27 b=18 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 25250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3f y=47
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 25350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1e b=e c=a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 25450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2c y=36
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 25550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=16 b=24 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 25650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3a y=41
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 25750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=17 b=25 c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 25850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3c y=45
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 25950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1a b=11 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 26050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2b y=33
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 26150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=18 b=19 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 26250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=31 y=39
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 26350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1f b=1a c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 26450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=39 y=42
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 26550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=27 b=c c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 26650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=33 y=3a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 26750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=28 b=b c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 26850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=33 y=3b
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 26950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=20 b=26 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 27050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=46 y=4d
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 27150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=32 b=22 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 27250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=54 y=5c
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 27350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=32 b=16 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 27450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=48 y=50
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 27550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=27 b=18 c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 27650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3f y=45
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 27750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1e b=1d c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 27850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3b y=41
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 27950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1a b=f c=5
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 28050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=29 y=2e
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 28150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=16 b=f c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 28250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=25 y=2c
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 28350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=18 b=15 c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 28450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2d y=36
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 28550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=1b b=11 c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 28650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2c y=32
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 28750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2f b=25 c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 28850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=54 y=5a
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 28950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=22 b=c c=9
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 29050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2e y=37
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 29150000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=14 b=1d c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 29250000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=31 y=37
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 29350000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=18 b=12 c=8
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 29450000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=2a y=32
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 29550000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=2e b=21 c=6
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 29650000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=4f y=55
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 29750000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=32 b=12 c=5
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 29850000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=44 y=49
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/inp_monitor.sv(47) @ 29950000: uvm_test_top.env.inp_agnt.inp_mntr [INP_MON] Captured input: a=21 b=19 c=7
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/sequence/design_sequence.sv(42) @ 29950000: uvm_test_top.env.inp_agnt.sqncr@@des_sequence [design_sequence] Done generated of 100 packet items
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/sequence/inp_sequence.sv(29) @ 29950000: uvm_test_top.env.inp_agnt.sqncr@@uvm_sequence [inp_sequence] des_sequence done..
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/agent/out_monitor.sv(48) @ 30050000: uvm_test_top.env.out_agnt.out_mntr [OUT_MON] Captured output: x=3a y=41
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/env/design_env.sv(66) @ 35050000: uvm_test_top.env [design_env] scoreboard verification complete....
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/env/design_env.sv(70) @ 35050000: uvm_test_top.env [design_env] main phase done....
+# UVM_INFO /home/ubuntu/my_uvm//verif/uvm_tb/scoreboard/scoreboard.sv(91) @ 35050000: uvm_test_top.env.scrbd [SCB] Packets matches = 100, mismatch = 0
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_report_server.svh(847) @ 35050000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  310
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [CFGDB/GET]    90
+# [CFGDB/SET]     7
+# [CHECK]     1
+# [Design Sequence]     1
+# [INP_MON]   100
+# [OUT_MON]   100
+# [RNTST]     1
+# [SCB]     1
+# [UVM/RELNOTES]     1
+# [design_base_test]     1
+# [design_env]     3
+# [design_sequence]     1
+# [inp_sequence]     2
+# [short_test]     1
+# 
+# ** Note: $finish    : /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_root.svh(517)
+#    Time: 3505 ns  Iteration: 121  Instance: /tb_design_t
+# End time: 16:43:56 on Aug 24,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 3

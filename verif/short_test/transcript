@@ -1,0 +1,63 @@
+# vsim -c tb_design_t -sv_lib /home/ubuntu/ICS/uvm_1.2/uvm-1.2/lib/uvm_dpi -work /home/ubuntu/my_uvm/verif/script//work "+UVM_TESTNAME=short_testextendsdesign_base_test" 
+# Start time: 07:11:44 on Aug 22,2025
+# Loading /tmp/root@ubuntu-2204_dpi_4902/linuxaloem_gcc-7.4.0/export_tramp.so
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading /home/ubuntu/my_uvm/verif/script//work.uvm_pkg
+# Loading /home/ubuntu/my_uvm/verif/script//work.design_package
+# Loading /home/ubuntu/my_uvm/verif/script//work.tb_design_t
+# Loading /home/ubuntu/my_uvm/verif/script//work.design_in_intf
+# Loading /home/ubuntu/my_uvm/verif/script//work.design_out_intf
+# Loading /home/ubuntu/my_uvm/verif/script//work.design_t
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 fs  Iteration: 0  Region: /design_package File: /home/ubuntu/my_uvm//verif/uvm_tb/scoreboard/scoreboard.sv Line: 41
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 fs  Iteration: 0  Region: /design_package File: /home/ubuntu/my_uvm//verif/uvm_tb/env/design_env.sv Line: 29
+# Compiling /tmp/root@ubuntu-2204_dpi_4902/linuxaloem_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/root@ubuntu-2204_dpi_4902/linuxaloem_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/ubuntu/ICS/uvm_1.2/uvm-1.2/lib/uvm_dpi.so
+# ** Warning: Design size of 55098 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_WARNING @ 0: reporter [BDTYP] Cannot create a component of type 'short_testextendsdesign_base_test' because it is not registered with the factory.
+# UVM_FATAL @ 0: reporter [INVTST] Requested test from command line +UVM_TESTNAME=short_testextendsdesign_base_test not found.
+# UVM_INFO /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_report_server.svh(847) @ 0: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    1
+# UVM_WARNING :    1
+# UVM_ERROR :    0
+# UVM_FATAL :    1
+# ** Report counts by id
+# [BDTYP]     1
+# [INVTST]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src//base/uvm_root.svh(135)
+#    Time: 0 fs  Iteration: 0  Instance: /tb_design_t
+# End time: 07:11:49 on Aug 22,2025, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 3

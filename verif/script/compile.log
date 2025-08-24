@@ -1,0 +1,16 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 16:43:49 on Aug 24,2025
+vlog "+incdir+/home/ubuntu/ICS/uvm_1.2/uvm-1.2/src/" -sv -mfcu -work /home/ubuntu/my_uvm/verif/script//work "+define+VSIM" -timescale=1ns/100fs "+incdir+/home/ubuntu/my_uvm//verif/uvm_tb/sequence_item" "+incdir+/home/ubuntu/my_uvm//verif/uvm_tb/sequence" "+incdir+/home/ubuntu/my_uvm//verif/uvm_tb/config" "+incdir+/home/ubuntu/my_uvm//verif/uvm_tb/common" "+incdir+/home/ubuntu/my_uvm//verif/uvm_tb/interface" "+incdir+/home/ubuntu/my_uvm//verif/uvm_tb/agent" "+incdir+/home/ubuntu/my_uvm//verif/uvm_tb/scoreboard" "+incdir+/home/ubuntu/my_uvm//verif/uvm_tb/env" "+incdir+/home/ubuntu/my_uvm//verif/uvm_tb" "+incdir+/home/ubuntu/my_uvm/verif/short_test" /home/ubuntu/my_uvm//design/design_t.sv /home/ubuntu/my_uvm//verif/uvm_tb/interface/design_in_intf.sv /home/ubuntu/my_uvm//verif/uvm_tb/interface/design_out_intf.sv /home/ubuntu/ICS/uvm_1.2/uvm-1.2/src/uvm_pkg.sv /home/ubuntu/my_uvm//verif/uvm_tb/package/design_package.sv /home/ubuntu/my_uvm//verif/vlib/tb_design_t.sv -l /home/ubuntu/my_uvm/verif/script//compile.log 
+-- Compiling module design_t
+-- Compiling interface design_in_intf
+-- Compiling interface design_out_intf
+-- Compiling package uvm_pkg
+-- Compiling package design_package
+-- Importing package uvm_pkg
+-- Compiling module tb_design_t
+-- Importing package design_package
+
+Top level modules:
+	tb_design_t
+End time: 16:43:52 on Aug 24,2025, Elapsed time: 0:00:03
+Errors: 0, Warnings: 0
